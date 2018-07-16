@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		EDC524AC20FCDB1000D7FEC7 /* AwesomeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC524AA20FCDB1000D7FEC7 /* AwesomeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDC524B620FCE41500D7FEC7 /* AWEMainClass.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC524B420FCE41500D7FEC7 /* AWEMainClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDC524B720FCE41500D7FEC7 /* AWEMainClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC524B520FCE41500D7FEC7 /* AWEMainClass.m */; };
+		EDC524DC20FCFE7700D7FEC7 /* AWEConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC524DA20FCFE7700D7FEC7 /* AWEConstants.h */; };
+		EDC524DD20FCFE7700D7FEC7 /* AWEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC524DB20FCFE7700D7FEC7 /* AWEConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDC524A720FCDB1000D7FEC7 /* AwesomeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC524AA20FCDB1000D7FEC7 /* AwesomeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeFramework.h; sourceTree = "<group>"; };
 		EDC524AB20FCDB1000D7FEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC524B420FCE41500D7FEC7 /* AWEMainClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWEMainClass.h; sourceTree = "<group>"; };
+		EDC524B520FCE41500D7FEC7 /* AWEMainClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWEMainClass.m; sourceTree = "<group>"; };
+		EDC524DA20FCFE7700D7FEC7 /* AWEConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWEConstants.h; sourceTree = "<group>"; };
+		EDC524DB20FCFE7700D7FEC7 /* AWEConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWEConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,30 @@
 		EDC524A920FCDB1000D7FEC7 /* AwesomeFramework */ = {
 			isa = PBXGroup;
 			children = (
+				EDC524B320FCDC0800D7FEC7 /* Source */,
+				EDC524B220FCDB3B00D7FEC7 /* Cpp Library */,
 				EDC524AA20FCDB1000D7FEC7 /* AwesomeFramework.h */,
 				EDC524AB20FCDB1000D7FEC7 /* Info.plist */,
 			);
 			path = AwesomeFramework;
+			sourceTree = "<group>";
+		};
+		EDC524B220FCDB3B00D7FEC7 /* Cpp Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Cpp Library";
+			sourceTree = "<group>";
+		};
+		EDC524B320FCDC0800D7FEC7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EDC524B420FCE41500D7FEC7 /* AWEMainClass.h */,
+				EDC524B520FCE41500D7FEC7 /* AWEMainClass.m */,
+				EDC524DA20FCFE7700D7FEC7 /* AWEConstants.h */,
+				EDC524DB20FCFE7700D7FEC7 /* AWEConstants.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +87,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC524DC20FCFE7700D7FEC7 /* AWEConstants.h in Headers */,
 				EDC524AC20FCDB1000D7FEC7 /* AwesomeFramework.h in Headers */,
+				EDC524B620FCE41500D7FEC7 /* AWEMainClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC524B720FCE41500D7FEC7 /* AWEMainClass.m in Sources */,
+				EDC524DD20FCFE7700D7FEC7 /* AWEConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
